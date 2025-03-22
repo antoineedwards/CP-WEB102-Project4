@@ -8,6 +8,8 @@
 .spinner-container {
     margin: 20px;
     text-align: center;
+    align-items: center;
+    align-content: center;
   }
   
   /* Spinner animation */

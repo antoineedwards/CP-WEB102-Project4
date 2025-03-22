@@ -98,27 +98,29 @@ function SpaceCard() {
 
         {spaceImage && !loading && (
           <div>
-            <img src={spaceImage} alt="Mars Rover" style={{ maxWidth: '100%', marginTop: '10px' }} />
+            <img src={spaceImage} alt="Mars Rover" style={{ maxWidth: '50%', marginTop: '10px' }} />
             <div style={{ marginTop: '10px', backgroundColor:'white', display:'flex', flexDirection:'column',
               alignItems:'center', justifyContent:'center', padding:'10px', borderRadius:'10px'
             }}>
-                <button
-                  style={{ cursor: 'pointer', color: 'blue' }}
+              <h2>Image Metadata</h2>
+              <p>Click on the metadata to add it to the ban list</p>
+                <button margin='5px'
+                  style={{ cursor: 'pointer', color: 'white' }}
                   onClick={() => addToBanList('sol', metadata?.sol)}
                 ><strong>Sol (Martian day):</strong> {metadata?.sol}
                 </button>
-                <button
-                  style={{ cursor: 'pointer', color: 'blue' }}
+                <button padding='5px'
+                  style={{ cursor: 'pointer', color: 'white' }}
                   onClick={() => addToBanList('camera', metadata?.camera)}
                 ><strong>Camera:</strong> {metadata?.camera}
                 </button> 
-                <button
-                  style={{ cursor: 'pointer', color: 'blue' }}
+                <button margin='5px'
+                  style={{ cursor: 'pointer', color: 'white' }}
                   onClick={() => addToBanList('rover', metadata?.rover)}
                 ><strong>Rover:</strong> {metadata?.rover}
                 </button> 
-                <button
-                  style={{ cursor: 'pointer', color: 'blue' }}
+                <button margin='5px'
+                  style={{ cursor: 'pointer', color: 'white' }}
                   onClick={() => addToBanList('earth_date', metadata?.earth_date)}
                 ><strong>Earth Date:</strong> {metadata?.earth_date}
                 </button>

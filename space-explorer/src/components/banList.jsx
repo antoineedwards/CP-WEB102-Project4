@@ -3,8 +3,8 @@ import React from 'react';
 function BanList({ banList, removeFromBanList }) {
   return (
     <div className="ban-list">
-      <h3>Ban List</h3>
-      <ul>
+      <h3 style={{color:'white'}}>Ban List</h3>
+      <ul style={{color:'white', listStyleType:'none'}}>
         {banList.map((ban, index) => (
           <li key={index} listStyleType="none">
             {Object.keys(ban).map(key => (

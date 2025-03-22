@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-      <h1>Space Explorer</h1>
-      <p >
+      <h1 style={{color:'white'}}>Space Explorer</h1>
+      <p style={{color:'white'}}>
         Disover new images from space
       </p>
       <SpaceCard/>
